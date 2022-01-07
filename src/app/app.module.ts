@@ -15,7 +15,8 @@ export const config = {
   declarations: [AppComponent],
   imports: [BrowserModule],
   providers: [
-    // { provide: LoggerService, useClass: ClientLoggerService },
+    // { provide: LoggerService, useClass: LoggerService, multi: true },
+    // { provide: LoggerService, useClass: ClientLoggerService, multi: true },
     // { provide: ClientLoggerService, useExisting: LoggerService },
     { provide: Config, useValue: config },
     {
